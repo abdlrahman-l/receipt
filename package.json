@@ -9,12 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.18.13",
+    "@emotion/babel-preset-css-prop": "^11.10.0",
+    "@emotion/css": "^11.5.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@emotion/styled-base": "^10.3.0",
+    "@manskuy/breakpoints": "^0.1.7",
+    "@manskuy/column": "^0.1.9",
+    "@manskuy/row": "^0.1.10",
+    "axios": "^0.22.0",
+    "emotion": "^10.0.27",
+    "emotion-reset": "^3.0.1",
+    "monet": "^0.9.3",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-redux": "^7.2.6",
+    "redux": "^4.0.5",
+    "redux-axios-middleware": "^4.0.1",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "throttle-debounce": "^5.0.0"
   },
   "devDependencies": {
+    "@types/node": "^18.7.14",
+    "@types/react": "^18.0.18",
     "eslint": "8.23.0",
-    "eslint-config-next": "12.2.5"
+    "eslint-config-next": "12.2.5",
+    "typescript": "^4.8.2"
   }
 }
