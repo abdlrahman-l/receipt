@@ -14,8 +14,13 @@ export default function Home() {
         <meta name="description" content="Explore everything receipe you want !" />
         <link rel="icon" href="/food.svg" />
       </Head>
+
+      <SimpleHeader />
       <main>
-        <h2>Test</h2>
+        <Search />
+        <RandomMeal />
+        <Categories />
+        <AreaList />
       </main>
     </div>
   )
