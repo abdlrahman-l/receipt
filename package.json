@@ -16,7 +16,7 @@
     "@emotion/styled": "^11.3.0",
     "@emotion/styled-base": "^10.3.0",
     "@manskuy/breakpoints": "^0.1.20",
-    "@manskuy/column": "^0.1.9",
+    "@manskuy/column": "^0.1.16",
     "@manskuy/row": "^0.1.10",
     "axios": "^0.22.0",
     "emotion": "^10.0.27",

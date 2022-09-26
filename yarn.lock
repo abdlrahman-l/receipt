@@ -527,15 +527,22 @@
   resolved "https://registry.yarnpkg.com/@manskuy/breakpoints/-/breakpoints-0.1.7.tgz#00fe2a2ce3aa21619a96f6c72c8c75ffcfe3ce7f"
   integrity sha512-+/H4552sluwgid3I9fxdiw4yfepGhNV/LN2DuIYpO2UW//XGDVngCTlRIba8el1F1Q/8zMtAF7ngn2vs1d0DMA==
 
-"@manskuy/breakpoints@^0.1.20":
+"@manskuy/breakpoints@^0.1.16", "@manskuy/breakpoints@^0.1.20":
   version "0.1.20"
   resolved "https://registry.yarnpkg.com/@manskuy/breakpoints/-/breakpoints-0.1.20.tgz#c31c5ec3fdb5a51a20357023f4921931029f4596"
   integrity sha512-5bXaGHgcPcdV3Fpf1MaWxk4OPG5SAPpaBmKabidILpKNIkcrwYd3CWOdfx39wTeUaLF+lkJr/6paEZgt/87R3g==
 
-"@manskuy/column@^0.1.0", "@manskuy/column@^0.1.9":
+"@manskuy/column@^0.1.0":
   version "0.1.9"
   resolved "https://registry.yarnpkg.com/@manskuy/column/-/column-0.1.9.tgz#31a9ee3e1cc5babae066f621793660bdfe4640f0"
   integrity sha512-vM60sO9SKbWecBiAw6PlHSv6+t4MSdg+N8lHeaHR9sUFLwkTsrgimNMe86bNJqqyOWdfRExoAd2PzVtGtwycFQ==
+
+"@manskuy/column@^0.1.16":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/@manskuy/column/-/column-0.1.16.tgz#1c51a3fe9ca76a6d2b85290ff6b5db6760a75159"
+  integrity sha512-T+qau0OgQWR5DtOtTqy52An+fqqYYFaFHMGRp+cOybschBdHWag2XDOLsx3x8ARa90T7dx68IPG1l/d3Ruee4g==
+  dependencies:
+    "@manskuy/breakpoints" "^0.1.16"
 
 "@manskuy/row@^0.1.10":
   version "0.1.10"
