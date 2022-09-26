@@ -1,5 +1,8 @@
 # receipt
-This is receipt application using Next Js. 
+This is receipt application using Next Js, React, and Typescript. 
+
+Middleware: Redux Thunk, redux-axios-middleware
+Styling: Emotion
 
 ![Screen Shot 2022-09-05 at 16 31 33](https://user-images.githubusercontent.com/56751543/192189496-3b0e09eb-d2c4-4f9d-9adf-20876f38fc6c.png)
 ![Screen Shot 2022-09-05 at 16 32 22](https://user-images.githubusercontent.com/56751543/192189500-fb771673-9a94-45b2-a407-2406e1b1ca7e.png)
