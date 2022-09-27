@@ -6,24 +6,29 @@ import Column from '@manskuy/column'
 import Row from '@manskuy/row'
 
 import { fetchAreas, selectAreas, selectAreasLoaded } from '../../redux/areas'
+import { Area } from '../../types'
 import Layout from '../Layout'
 import SectionTitle from '../SectionTitle'
 import { AreaListWrapper } from './styles'
 
-const AreaList: FunctionComponent = () => {
+type AreaListProps = {
+    readonly areas: Area[]
+}
+
+const AreaList: FunctionComponent<AreaListProps> = ({ areas }: AreaListProps ) => {
     const dispatch = useDispatch()
-    const areas = useSelector(selectAreas)
-    const isLoaded = useSelector(selectAreasLoaded)
+    // const areas = useSelector(selectAreas)
+    // const isLoaded = useSelector(selectAreasLoaded)
 
     const { push } = useRouter()
 
-    useEffect(() => {
-      dispatch(fetchAreas)
-    }, [])
+    // useEffect(() => {
+    //   dispatch(fetchAreas)
+    // }, [])
 
-    if (!isLoaded) {
-        return null
-    }
+    // if (!isLoaded) {
+    //     return null
+    // }
     
     return (
         <Layout>

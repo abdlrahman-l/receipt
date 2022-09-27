@@ -1,3 +1,5 @@
+import axios from 'axios'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
@@ -7,26 +9,26 @@ import Column from '@manskuy/column'
 import Row from '@manskuy/row'
 
 import { fetchCategories, selectCategories, selectCategoriesLoaded } from '../../redux/categories'
+import { Categories, Category } from '../../types'
 import Layout from '../Layout'
 import SectionTitle from '../SectionTitle'
 import SimpleCard from '../SimpleCard'
-import { CardWrapper } from './styles'
 
-const Categories = () => {
+const CategoriesComp = ({ categories }) => {
     const dispatch = useDispatch()
-    const categories = useSelector(selectCategories)
+    // const categories = useSelector(selectCategories)
     const isLoaded = useSelector(selectCategoriesLoaded)
 
 
     const { push } = useRouter()
 
-    useEffect(() => {
-      dispatch(fetchCategories)
-    }, [])
+    // useEffect(() => {
+    //   dispatch(fetchCategories)
+    // }, [])
 
-    if (!isLoaded) {
-        return null
-    }
+    // if (!isLoaded) {
+    //     return null
+    // }
     
     return (
         <Layout>
@@ -48,4 +50,4 @@ const Categories = () => {
     )
 }
 
-export default Categories
+export default CategoriesComp

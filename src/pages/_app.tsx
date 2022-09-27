@@ -1,13 +1,20 @@
+import axios from 'axios'
+import emotionReset from 'emotion-reset'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import App from 'next/app'
+import { Provider as StoreProvider } from 'react-redux'
 // import '../styles/globals.css'
 import { PersistGate } from 'redux-persist/integration/react'
-import { Provider as StoreProvider } from 'react-redux'
-import emotionReset from 'emotion-reset'
-import { Global, css } from '@emotion/react'
+
+import { css, Global } from '@emotion/react'
+
 import store from '../config/redux-store'
+import { Categories } from '../types'
 
 function MyApp({ Component, pageProps }) {
 
-  
+  const newPageProps = {...pageProps}
+
   return (
     <StoreProvider store={store}>
       <Global
@@ -179,10 +186,17 @@ function MyApp({ Component, pageProps }) {
       persistor={store.__PERSISTOR}
       loading={null}
     >
-      <Component {...pageProps} />
+      <Component {...newPageProps} />
     </PersistGate>
   </StoreProvider>
   )
 }
+
+MyApp.getInitialProps = async (appContext) => {
+  // calls page's `getInitialProps` and fills `appProps.pageProps`
+  const appProps = await App.getInitialProps(appContext);
+
+  return { ...appProps };
+};
 
 export default MyApp
