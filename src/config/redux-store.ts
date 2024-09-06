@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Dispatch } from 'react'
-import { Action, applyMiddleware, combineReducers, compose, createStore } from 'redux'
+import { Action, applyMiddleware, compose, createStore } from 'redux'
 import { multiClientMiddleware } from 'redux-axios-middleware'
 import { persistStore } from 'redux-persist'
 import thunk from 'redux-thunk'
@@ -70,6 +70,7 @@ const store = createStoreWithMiddleware(
   )
 )
 
+// @ts-ignore
 store.__PERSISTOR = persistStore(store)
 
 export default store

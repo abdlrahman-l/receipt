@@ -183,6 +183,7 @@ function MyApp({ Component, pageProps }) {
         `}
       />
     <PersistGate
+// @ts-ignore
       persistor={store.__PERSISTOR}
       loading={null}
     >
